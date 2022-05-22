@@ -1,8 +1,11 @@
 import './App.css';
+import BtnContainer from './BtnContainer';
 
 function App() {
   return (
-    <div className="app">Hello world!</div>
+    <div className="app">
+      <BtnContainer/>
+    </div>
   );
 }
 
