@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Radio Button Example (React.js)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Screenshot
+
+![Radio Button Example](https://i.ibb.co/ySN0NqD/Untitled.jpg)
 
 ## Available Scripts
 
