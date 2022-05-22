@@ -11,6 +11,7 @@
     padding: 0.5rem 1rem;
     font-size: 1.4rem;
     cursor: pointer;
+    color: #fafafa;
     background-color: var(--secondary);
     transition: background-color 0.25s;
 }

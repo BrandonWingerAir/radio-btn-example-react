@@ -3,10 +3,10 @@ import BtnContainer from './BtnContainer';
 import { useState } from 'react';
 
 let btnValues = [
-  {id: 1, value: '💻' },
-  {id: 2, value: '🏂' },
-  {id: 3, value: '🎸' },
-  {id: 4, value: '🎮' }
+  {id: 1, value: 'Coding 💻' },
+  {id: 2, value: 'Gaming 🎮' },
+  {id: 3, value: 'Music 🎸' },
+  {id: 4, value: 'Sports 🏂' }
 ];
 
 function App() {
