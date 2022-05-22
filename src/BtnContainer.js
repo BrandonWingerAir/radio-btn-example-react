@@ -1,17 +1,23 @@
 import React from 'react';
 import styles from './BtnContainer.module.css';
+import { useState } from 'react' 
 
-let buttons = [
-    {id: 1, value: '💻' },
-    {id: 2, value: '🏂' },
-    {id: 3, value: '🎸' },
-    {id: 4, value: '🎮' },
-]
+export default function BtnContainer({ buttons, OnChange }) {
+    const [ActiveBtn, setActiveBtn] = useState(buttons[0].id);
 
-export default function BtnContainer(props) {
+    function onClick(btn) {
+        OnChange(btn)
+        setActiveBtn(btn.id);
+    }
+
     return <div className={styles.container}>
-        {buttons.map(btn => {
-            return <div className={styles.btn}>{btn.value}</div>
+        {buttons.map((btn, btnKey) => {
+            return <div 
+                        key={btnKey}
+                        onClick={() => onClick(btn)}
+                        className={styles.btn + " " + (ActiveBtn === btn.id ? styles.active : "")}>
+                {btn.value}
+            </div>
         })}
     </div>;
 }

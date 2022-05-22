@@ -10,6 +10,7 @@
 }
 
 .app {
+  font-family: 'Brixton', Arial, Helvetica, sans-serif;
   position: absolute;
   left: 0;
   top: 0;
@@ -17,6 +18,13 @@
   height: 100%;
   background-color: var(--background);
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  row-gap: 2rem;
   align-items: center;
+}
+
+h2 {
+  font-size: 5rem;
+  color: var(--primary);
 }
